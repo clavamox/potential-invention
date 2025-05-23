@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/selectedColor"/>
+            <corners
+                android:topLeftRadius="@dimen/segmentcontrol_height"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="@dimen/segmentcontrol_height"
+                android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners
+                android:topLeftRadius="@dimen/segmentcontrol_height"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="@dimen/segmentcontrol_height"
+                android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+</selector>

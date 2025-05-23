@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/loading"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/pb_loading_ring"
+        android:visibility="visible"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:indeterminateDrawable="@drawable/pb_loading_ring"/>
+    <ProgressBar
+        android:id="@+id/pb_loading_qq"
+        android:visibility="gone"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:indeterminateDrawable="@drawable/pb_loading_bg"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/load_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="正在缓冲..."/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <include layout="@layout/custom_video_player_loading"/>
+    <include layout="@layout/custom_video_player_change_position"/>
+    <include layout="@layout/custom_video_player_change_brightness"/>
+    <include layout="@layout/custom_video_player_change_volume"/>
+    <include layout="@layout/old_video_player_completed"/>
+    <include layout="@layout/old_video_player_error"/>
+    <include layout="@layout/old_video_player_top"/>
+    <include layout="@layout/old_video_player_bottom"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/length"
+        android:padding="4dp"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="00:00"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"/>
+    <ImageView
+        android:id="@+id/center_start"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_player_center_start"
+        android:layout_centerInParent="true"/>
+    <FrameLayout
+        android:id="@+id/fl_lock"
+        android:background="@drawable/shape_lock_bg"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_lock_button"/>
+    </FrameLayout>
+    <include layout="@layout/old_video_player_line"/>
+</RelativeLayout>

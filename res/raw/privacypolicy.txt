@@ -1,0 +1,4 @@
+We will access rights of your devices to offer a better result to you and optimize our services during usage as follow:
+Storage:
+Take a photo: Accessing storage permission is to save the photos to the phone storage and system album.
+Take a video: Accessing storage permission is to save the videos to the phone storage and system album.

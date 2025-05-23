@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_nav_height"
+        android:layout_marginTop="20dp"
+        layout="@layout/layout_top_nav"/>
+    <TextView
+        android:scrollbarStyle="outsideOverlay"
+        android:textSize="14sp"
+        android:ellipsize="none"
+        android:gravity="left"
+        android:id="@+id/help_policy_textview"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical"
+        android:fadingEdgeLength="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="40"
+        android:singleLine="false"
+        android:isScrollContainer="true"/>
+</LinearLayout>

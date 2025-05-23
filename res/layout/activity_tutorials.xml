@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:background="@color/transparent"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:textSize="@dimen/app_text_size"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/btn_start_opt"
+        android:background="@drawable/start_opt_bg"
+        android:visibility="invisible"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/start_opt"
+        android:onClick="onClick"/>
+    <LinearLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/point"
+        android:background="@color/transparent"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"/>
+</FrameLayout>
